@@ -1,0 +1,16 @@
+{
+    "client": "Thunder Client",
+    "environmentName": "Resources",
+    "dateExported": "2024-11-26T20:07:08.889Z",
+    "version": "1.0",
+    "variables": [
+        {
+            "name": "local",
+            "value": "http://localhost:5000/api"
+        },
+        {
+            "name": "token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0NjAxY2IxNDBlZDIyNDRiMmFjYjAwIiwiaGFzaCI6IjIyYjRmZmIzNDUiLCJpYXQiOjE3MzI2NDEyMzV9.eARwg-TaQ97UL6aozDHzYT1KzLy0kzTBhVDGXHF6Q74"
+        }
+    ]
+}

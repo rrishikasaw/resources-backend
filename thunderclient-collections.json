@@ -1,0 +1,194 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Resources",
+    "dateExported": "2024-11-26T20:06:48.289Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "94bc86f0-86d1-4c4d-9636-da5ad1147aed",
+            "name": "Users",
+            "containerId": "",
+            "created": "2024-11-26T16:25:28.686Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "a23a73d4-dee2-4435-940c-fa52e20e11b6",
+            "name": "Auth",
+            "containerId": "",
+            "created": "2024-11-26T17:05:09.317Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "a65ab62e-68f7-47ae-9be3-d93dee8e8ff3",
+            "name": "Resource",
+            "containerId": "",
+            "created": "2024-11-26T18:13:11.120Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "da493215-b829-41bb-966a-74a9beb1e52e",
+            "colId": "258a4b0b-a4ba-4c33-9482-514ce817eb12",
+            "containerId": "94bc86f0-86d1-4c4d-9636-da5ad1147aed",
+            "name": "/",
+            "url": "{{local}}/users",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-11-26T16:25:34.372Z",
+            "modified": "2024-11-26T17:12:00.371Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Rishika Kumari\",\n  \"email\": \"rrishikasaw@gmail.com\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ac94c97b-2a0d-4158-a3c5-4879fce8a040",
+            "colId": "258a4b0b-a4ba-4c33-9482-514ce817eb12",
+            "containerId": "94bc86f0-86d1-4c4d-9636-da5ad1147aed",
+            "name": "/",
+            "url": "{{local}}/users",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-11-26T16:31:23.764Z",
+            "modified": "2024-11-26T17:15:06.256Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "e70bf268-3a96-4c26-8514-18d9d56dece6",
+            "colId": "258a4b0b-a4ba-4c33-9482-514ce817eb12",
+            "containerId": "a23a73d4-dee2-4435-940c-fa52e20e11b6",
+            "name": "/login",
+            "url": "{{local}}/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-11-26T17:05:17.837Z",
+            "modified": "2024-11-26T17:10:08.073Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"rrishikasaw@gmail.com\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "832e458a-334f-4f3c-b966-2ecc059e0f72",
+            "colId": "258a4b0b-a4ba-4c33-9482-514ce817eb12",
+            "containerId": "a65ab62e-68f7-47ae-9be3-d93dee8e8ff3",
+            "name": "/",
+            "url": "{{local}}/resources?limit=2",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-11-26T18:13:15.067Z",
+            "modified": "2024-11-26T19:05:00.744Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "limit",
+                    "value": "2",
+                    "isPath": false
+                },
+                {
+                    "name": "page",
+                    "value": "1",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "status",
+                    "value": "active",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "2233cb5c-4c7a-4a9b-ad80-cdf6bb67ca52",
+            "colId": "258a4b0b-a4ba-4c33-9482-514ce817eb12",
+            "containerId": "a65ab62e-68f7-47ae-9be3-d93dee8e8ff3",
+            "name": "/:id",
+            "url": "{{local}}/resources/67461aad4402dc301c5913dd",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-11-26T18:15:26.893Z",
+            "modified": "2024-11-26T19:02:12.423Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "66c0e5cb-f311-4ab5-bed5-1b0e8eb550fc",
+            "colId": "258a4b0b-a4ba-4c33-9482-514ce817eb12",
+            "containerId": "a65ab62e-68f7-47ae-9be3-d93dee8e8ff3",
+            "name": "/",
+            "url": "{{local}}/resources",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-11-26T18:15:55.435Z",
+            "modified": "2024-11-26T19:58:54.303Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "link",
+                        "value": "http://example.com",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "expiry",
+                        "value": "2024-11-27T09:28:00"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "file",
+                        "value": "c:\\Users\\ritur\\Pictures\\forest_2364458.png"
+                    }
+                ]
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "ee6dcad9-500b-4bcf-86e6-97d8db757279",
+            "colId": "258a4b0b-a4ba-4c33-9482-514ce817eb12",
+            "containerId": "a65ab62e-68f7-47ae-9be3-d93dee8e8ff3",
+            "name": "/:id",
+            "url": "{{local}}/resources/674601cb140ed2244b2acb00",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-11-26T18:24:51.012Z",
+            "modified": "2024-11-26T18:59:54.102Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": []
+        }
+    ]
+}

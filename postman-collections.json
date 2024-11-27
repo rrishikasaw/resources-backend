@@ -1,0 +1,229 @@
+{
+    "info": {
+        "_postman_id": "3b2ab877-345b-4cbc-925f-b60423a29917",
+        "name": "Resources",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "Users",
+            "item": [
+                {
+                    "name": "/",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "{{local}}/users",
+                            "path": [
+                                "users"
+                            ],
+                            "host": [
+                                "{{local}}"
+                            ]
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"name\": \"Rishika Kumari\",\n  \"email\": \"rrishikasaw@gmail.com\",\n  \"password\": \"123456\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "/",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{local}}/users",
+                            "path": [
+                                "users"
+                            ],
+                            "host": [
+                                "{{local}}"
+                            ]
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "{{token}}",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Auth",
+            "item": [
+                {
+                    "name": "/login",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "{{local}}/auth/login",
+                            "path": [
+                                "auth",
+                                "login"
+                            ],
+                            "host": [
+                                "{{local}}"
+                            ]
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"email\": \"rrishikasaw@gmail.com\",\n  \"password\": \"123456\"\n}"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Resource",
+            "item": [
+                {
+                    "name": "/",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{local}}/resources?limit=2",
+                            "query": [
+                                {
+                                    "key": "limit",
+                                    "value": "2"
+                                },
+                                {
+                                    "key": "page",
+                                    "value": "1",
+                                    "disabled": true
+                                },
+                                {
+                                    "key": "status",
+                                    "value": "active",
+                                    "disabled": true
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "resources"
+                            ],
+                            "host": [
+                                "{{local}}"
+                            ]
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "{{token}}",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "/:id",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{local}}/resources/67461aad4402dc301c5913dd",
+                            "path": [
+                                "resources",
+                                "67461aad4402dc301c5913dd"
+                            ],
+                            "host": [
+                                "{{local}}"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "/",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "{{local}}/resources",
+                            "path": [
+                                "resources"
+                            ],
+                            "host": [
+                                "{{local}}"
+                            ]
+                        },
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "link",
+                                    "value": "http://example.com",
+                                    "disabled": true,
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "expiry",
+                                    "value": "2024-11-27T09:28:00",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "file",
+                                    "src": "c:\\Users\\ritur\\Pictures\\forest_2364458.png",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "{{token}}",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "/:id",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "{{local}}/resources/674601cb140ed2244b2acb00",
+                            "path": [
+                                "resources",
+                                "674601cb140ed2244b2acb00"
+                            ],
+                            "host": [
+                                "{{local}}"
+                            ]
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "{{token}}",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#3A2B06",
+    "titleBar.activeBackground": "#513D08",
+    "titleBar.activeForeground": "#FEFBF3"
+  },
+  "cSpell.words": [
+    "presigner",
+    "uploaders"
+  ]
+}

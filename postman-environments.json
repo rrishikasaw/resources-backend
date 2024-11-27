@@ -1,0 +1,19 @@
+{
+    "name": "Resources",
+    "id": "579320b6-115b-465d-a3d2-2bd48de525d7",
+    "_postman_variable_scope": "environment",
+    "_postman_exported_at": "2024-11-26T20:07:51.954Z",
+    "_postman_exported_using": "Thunder Client",
+    "values": [
+        {
+            "key": "local",
+            "value": "http://localhost:5000/api",
+            "enabled": true
+        },
+        {
+            "key": "token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0NjAxY2IxNDBlZDIyNDRiMmFjYjAwIiwiaGFzaCI6IjIyYjRmZmIzNDUiLCJpYXQiOjE3MzI2NDEyMzV9.eARwg-TaQ97UL6aozDHzYT1KzLy0kzTBhVDGXHF6Q74",
+            "enabled": true
+        }
+    ]
+}
